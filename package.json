@@ -1,0 +1,17 @@
+{
+  "name": "PFC BENIN",
+  "version": "2.0.0",
+  "description": "Le Projet Forêts Classées Bénin (PFC – B) contribue au cadre de partenariat entre la Banque mondiale et le Benin de 2018-2022 au travers de son (i) Domaine d’intervention 1 «Transformation structurelle par la compétitivité et la productivité», ",
+  "author": "Iroko Media",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "nuxt": "^2.0.0"
+  }
+}
