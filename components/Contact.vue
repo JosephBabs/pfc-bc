@@ -7,10 +7,11 @@
                       <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
                           <div class="contact-info-one__icon"><i class="kipso-icon-manager"></i><!-- /.kipso-icon-manager -->
                           </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">About Us </h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">Lorem ipsum is simply free text <br> available in the market to
-                              use <br>
-                              deliver satisfaction.</p><!-- /.contact-info-one__text -->
+                          <h2 class="contact-info-one__title">A propos de nous </h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text">
+                            Le Projet Forêts Classées Bénin (PFC – B) contribue au cadre de partenariat entre la Banque mondiale et le Benin de 2018-2022 au travers de son  Domaine
+                             d’intervention 1 «Transformation structurelle par la compétitivité et la productivité»,
+                          </p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
@@ -18,18 +19,29 @@
                           <div class="contact-info-one__icon"><i class="kipso-icon-placeholder"></i>
                               <!-- /.kipso-icon-manager -->
                           </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">Our Address</h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">855 Road Broklyn Street, <br>
-                              600 New York, United States of <br> America</p><!-- /.contact-info-one__text -->
+                          <h2 class="contact-info-one__title">Adresse</h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text">Unité Intégrée de Gestion des Projets (UIGP) – 
+                            Projet Forêts Classées du Bénin <br> Complexe CEN-SAD LAICO, Villa 
+                            n°8 rue Steeve BIKO 01 BP 3502 Cotonou -
+                            <br>
+                            <br>
+                            <br>
+                        </p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
                   <div class="col-lg-4">
                       <div class="contact-info-one__single wow fadeInDown animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInDown;">
                           <div class="contact-info-one__icon"><i class="kipso-icon-contact"></i><!-- /.kipso-icon-manager -->
                           </div><!-- /.contact-info-one__icon -->
-                          <h2 class="contact-info-one__title">Contact Info</h2><!-- /.contact-info-one__title -->
-                          <p class="contact-info-one__text">needhelp@kipso.com <br>
-                              444 888 0000 <br> &nbsp; </p><!-- /.contact-info-one__text -->
+                          <h2 class="contact-info-one__title">Contacts</h2><!-- /.contact-info-one__title -->
+                          <p class="contact-info-one__text">
+                            (+229) 99 99 06 08 <br> &nbsp; 
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </p><!-- /.contact-info-one__text -->
                       </div><!-- /.contact-info-one__single -->
                   </div><!-- /.col-lg-4 -->
               </div><!-- /.row -->
@@ -37,20 +49,20 @@
       </section>
 <section class="contact-one">
           <div class="container">
-              <h2 class="contact-one__title text-center">Get in touch <br>
-                  with us</h2><!-- /.contact-one__title -->
+              <h2 class="contact-one__title text-center">Prenez contact
+                  </h2><!-- /.contact-one__title -->
               <form action="/assets/inc/sendemail.php" class="contact-one__form contact-form-validated" novalidate="novalidate">
                   <div class="row low-gutters">
                       <div class="col-lg-6">
-                          <input type="text" name="name" placeholder="Your Name">
+                          <input type="text" name="name" placeholder="Nom et Prénom">
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-6">
-                          <input type="text" placeholder="Email Address" name="email">
+                          <input type="text" placeholder="Email" name="email">
                       </div><!-- /.col-lg-6 -->
                       <div class="col-lg-12">
-                          <textarea placeholder="Write Message" name="message"></textarea>
+                          <textarea placeholder="Saisissez votre message" name="message"></textarea>
                           <div class="text-center">
-                              <button type="submit" class="contact-one__btn thm-btn">Submit Comment</button>
+                              <button type="submit" class="contact-one__btn thm-btn">Envoyer</button>
                           </div><!-- /.text-center -->
                       </div><!-- /.col-lg-12 -->
                   </div><!-- /.row -->

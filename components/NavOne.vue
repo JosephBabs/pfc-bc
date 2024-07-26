@@ -21,13 +21,10 @@
 
         <div class="container clearfix">
           <!-- Brand and toggle get grouped for better mobile display -->
+          
           <div class="logo-box clearfix">
-            <a class="navbar-brand" href="/">
-              <img src="/assets/images/logo-dark.png" class="main-logo" width="128" alt="Logo" />
-            </a>
-            <a class="navbar-brand" href="/">
-              <img src="/assets/images/logo-bm.png" class="main-logo" width="128" alt="" />
-            </a>
+            <img src="/assets/images/logo-dark.png" alt="Logo 1" class="logo" />
+            <img src="/assets/images/la-banque-mondiale-logo.png" alt="Logo 2" class="logo" />
           </div>
           <!-- /.header__social -->
           <button class="menu-toggler" data-target=".main-navigation">
@@ -37,20 +34,22 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
 
 
-          <div class="main-navigation"> 
+          <div class="main-navigation">
+            
+          
             <ul class="navigation-box">
               <li class="current">
                 <a href="/">Accueil </a>
               </li>
               <li><nuxt-link to="/apropos">A propos </nuxt-link></li>
-              <li><nuxt-link to="/#objectives-de-la-pcb">Objectifs et indicateurs</nuxt-link></li>
+              <li><nuxt-link to="/objectifs_et_indicateurs">Objectifs et indicateurs</nuxt-link></li>
               <li>
-                <nuxt-link to="/#composantes">Composantes</nuxt-link>
+                <nuxt-link to="/composantes">Composantes</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/documenteque">Documentèque</nuxt-link>
                 <ul class="sub-menu">
-                  <li><nuxt-link to="/documenteque#rapports">Rapports</nuxt-link></li> 
+                  <li><nuxt-link to="/documenteque#rapports">Rapports</nuxt-link></li>
                   <li><nuxt-link to="/documenteque#marchespublics">Marchés Publics</nuxt-link></li>
                   <li><nuxt-link to="/documenteque#autresdocs">Autres Documents</nuxt-link></li>
                 </ul>
@@ -131,5 +130,34 @@ export default {
   },
 };
 </script>
+<style scoped>
 
-<style scoped></style>
+
+.logo-container {
+  display: flex;
+  gap: 10px; /* Space between logos */
+}
+
+.logo {
+  width:150px; /* Set a fixed width for logos */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure logos do not overflow */
+  object-fit: contain; /* Ensure logos fit well */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  
+.logo {
+  width:90px; /* Set a fixed width for logos */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure logos do not overflow */
+  object-fit: contain; /* Ensure logos fit well */
+  margin-bottom: -70px;
+  padding-top: 10px
+}
+}
+
+
+
+</style>

@@ -6,7 +6,7 @@
                   <div class="blog-one__single">
                       <div class="blog-one__image">
                           <img :src="
-                  'https://app.cmabenin.bj/web/public/storage/' + actu.cover
+                  'https://uigp.bj/portal/public/storage/' + actu.cover
                 " alt="">
                           <nuxt-link class="blog-one__plus" :to="'/actus-details?post='+actu.id"><i class="kipso-icon-plus-symbol"></i>
                               <!-- /.kipso-icon-plus-symbol --></nuxt-link>
@@ -43,7 +43,7 @@
     async getData() {
       // const apiLink = data.apiUrl.link;
       // apiLink+
-      const res = await fetch("https://app.cmabenin.bj/api/posts");
+      const res = await fetch("https://uigp.bj/api/pfcposts");
       const finalRes = await res.json();
       this.news = finalRes.posts;
     },
@@ -56,14 +56,7 @@
     this.getData();
   },
   computed: {
-    // truncatedDescription( content) {
-    //   if (content) {
-    //     // Truncate the description to the first 100 characters
-    //     return content.toString.substring(0, 100);
-    //   }
-    //   // If the description is empty, you can provide a default value or handle it accordingly
-    //   return "No description available";
-    // }
+    
   }
     }
 </script>

@@ -21,11 +21,17 @@ export default {
                 { src: "/assets/images/slide/slider2.jpg", alt: "Image 2", overlayText: "Projet Forêts Classées du Bénin" },
                 { src: "/assets/images/slide/slider3.jpg", alt: "Image 3", overlayText: "Projet Forêts Classées du Bénin" },
                 { src: "/assets/images/slide/slider4.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" },
-                { src: "/assets/images/slide/slider5.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" },
-                { src: "/assets/images/slide/slider6.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" },
-                { src: "/assets/images/slide/slider7.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" },
-                { src: "/assets/images/slide/slider8.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" },
-                { src: "/assets/images/slide/slider9.jpg", alt: "Image 4", overlayText: "Projet Forêts Classées du Bénin" }
+                { src: "/assets/images/slide/slider5.jpeg", alt: "Image 5", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider6.jpeg", alt: "Image 6", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider7.jpeg", alt: "Image 7", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider8.jpeg", alt: "Image 8", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider9.jpeg", alt: "Image 9", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider10.jpeg", alt: "Image 10", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider11.jpeg", alt: "Image 11", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider12.jpeg", alt: "Image 12", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider13.jpeg", alt: "Image 13", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider15.jpeg", alt: "Image 14", overlayText: "Projet Forêts Classées du Bénin" },
+                { src: "/assets/images/slide/slider16.jpeg", alt: "Image 15", overlayText: "Projet Forêts Classées du Bénin" },
             ],
             currentIndex: 0,
             intervalId: null
@@ -91,7 +97,7 @@ export default {
 .overImg {
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: cover; 
 }
 .overText {
     position: absolute;
@@ -114,6 +120,7 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
 }
 
 }

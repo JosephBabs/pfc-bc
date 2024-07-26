@@ -1,109 +1,127 @@
+
 <template>
-    <div>
-        <footer class="site-footer">
-            <div class="site-footer__upper">
-                <div class="container">
-                    <div class="row">
-                        <!-- /.col-lg-3 -->
-                        
-                        <div class="col-xl-3 col-lg-6 col-sm-12">
-                            <div class="footer-widget footer-widget__link">
-                                <h2 class="footer-widget__title">Explorer</h2><!-- /.footer-widget__title -->
-                                <div class="footer-widget__link-wrap">
-                                    <ul class="list-unstyled footer-widget__link-list">
-                                        <li><nuxt-link to="/about">A propos </nuxt-link></li>
-                                        <li><nuxt-link to="/obj">Objectifs et indicateurs</nuxt-link></li>
-                                        <li><nuxt-link to="/composante">Composantes du PFC BENIN</nuxt-link></li>
-                                        <li><nuxt-link to="/beneficiaires">Bénéficiaires du PFC BENIN</nuxt-link></li>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- A propos Column -->
+                <div class="footer-column">
+                    <h3>A propos</h3>
+                    <p>Le Projet Forêts Classées Bénin (PFC – B)
+                        contribue au cadre de partenariat entre la Banque mondiale et le
+                        Benin de 2018-2022 au travers de son (i) Domaine d’intervention
+                        1 «Transformation structurelle par la compétitivité et la productivité».</p>
+                </div>
 
-                                        <li><nuxt-link to="/gallery">Galerie</nuxt-link></li>
+                <!-- Exploquer Column -->
+                <div class="footer-column">
+                    <h3>Explorer</h3>
+                    <ul>
+                        <li><nuxt-link to="/about">A propos </nuxt-link></li>
+                        <li><nuxt-link to="/obj">Objectifs et indicateurs</nuxt-link></li>
+                        <li><nuxt-link to="/composante">Composantes du PFC BENIN</nuxt-link></li>
+                        <li><nuxt-link to="/beneficiaires">Bénéficiaires du PFC BENIN</nuxt-link></li>
+                        <li><nuxt-link to="/gallery">Galerie</nuxt-link></li>
+                        <li><nuxt-link to="/news">Actualités</nuxt-link></li>
+                        <li> <nuxt-link to="/contact">Contact</nuxt-link></li>
+                    </ul>
+                </div>
 
-
-                                        <li>
-                                            <nuxt-link to="/news">Actualités</nuxt-link>
-                                        </li>
-                                        <li>
-                                            <nuxt-link to="/contact">Contact</nuxt-link>
-                                        </li>
-                                        <br>
-                                        <br>
-                                    </ul><!-- /.footer-widget__link-list -->
-                                    <!-- /.footer-widget__link-list -->
-                                </div><!-- /.footer-widget__link-wrap -->
-                            </div><!-- /.footer-widget -->
-                        </div><!-- /.col-lg-3 -->
-                        <div class="col-xl-5 col-lg-6 col-sm-12">
-                            <div class="footer-widget footer-widget__about">
-                                <h2 class="footer-widget__title">A propos</h2><!-- /.footer-widget__title -->
-                                <p class="footer-widget__text">Le Projet Forêts Classées Bénin (PFC – B)
-                                    contribue au cadre de partenariat entre la Banque mondiale et le
-                                    Benin de 2018-2022 au travers de son (i) Domaine d’intervention
-                                    1 «Transformation structurelle par la compétitivité et la productivité»,
-                                </p><!-- /.footer-widget__text -->
-                                <!-- /.footer-widget__btn-block -->
-                            </div><!-- /.footer-widget -->
-                        </div>
-                        <!-- /.col-lg-3 -->
-                        <div class="col-xl-4 col-lg-6 col-sm-12">
-                            <div class="footer-widget footer-widget__about">
-                                <h2 class="footer-widget__title">Contacts</h2><!-- /.footer-widget__title -->
-                                <p class="footer-widget__text">
-                                    Unité Intégrée de Gestion des Projets (UIGP) – Projet Forêts Classées du Bénin
+                <!-- Contacts Column -->
+                <div class="footer-column">
+                    <h3>Contacts</h3>
+                    <p>Unité Intégrée de Gestion des Projets (UIGP) – Projet Forêts Classées du Bénin
                                     Complexe CEN-SAD LAICO, Villa n°8 rue Steeve BIKO
-                                    01 BP 3502 Cotonou -</p>
-                                <ul class="list-unstyled footer-widget__link-list">
-                                    <li><a href="tel:+22999990608">Tél : (+229) 99 99 06 08</a></li>
-                                    <li><a href="https://cadredevie.gouv.bj/" target="_blank">www.cadredevie.gouv.bj/</a>
-                                    </li>
-                                </ul>
-<!-- /.footer-widget__text -->
-                                <!-- /.footer-widget__btn-block -->
-                            </div><!-- /.footer-widget -->
-                        </div>
+                                    01 BP 3502 Cotonou</p>
+                    <p><strong>Téléphone:</strong> <a href="tel:+22999990608"> (+229) 99 99 06 08</a></p>
+                    <p><strong>Email:</strong><a href="mailto:contact@pfc.uigp.com"> contact@pfc.uigp.com</a></p>
+                    <p><strong>Site Web:</strong> <a href="https://cadredevie.gouv.bj/" target="_blank"> www.cadredevie.gouv.bj/</a></p>
+                </div>
+            </div>
+        </div>
 
-                        <!-- /.col-lg-3 -->
-                    </div>
-                    
-
-                    <form @submit.prevent="submitDat">
-
-                        <div class="footer-widget__title">
-                            <br>
-                            <br>
-
-                        </div>
-
-                        <!-- <div class="footer_input-box">
-                  <input type="email"
-                    placeholder="E-mail"
-                    name="email"
-                    v-model="form.email"/>
-                  <button type="submit" class="button"> 
-                    <i class="fa fa-check"></i>
-                  </button>
-                </div> -->
-                    </form><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.site-footer__upper -->
-            <div class="site-footer__bottom">
-                <div class="container">
-                    <p class="site-footer__copy">&copy; Copyright {{ new Date().getFullYear() }} <a
-                            href="#"> </a> </p>
-                    <div class="site-footer__social">
-
-                    </div><!-- /.site-footer__social -->
-                    <!-- /.site-footer__copy -->
-                </div><!-- /.container -->
-            </div><!-- /.site-footer__bottom -->
-        </footer>
-
-    </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; {{ currentYear }}</p> 
+        </div>
+    </footer>
 </template>
 
 <script>
 export default {
-    name: "Footer"
-}
+    name: 'FooterComponent',
+
+    data() {
+        return {
+            currentYear: new Date().getFullYear()
+        };
+    }
+};
 </script>
 
-<style scoped></style>
+
+</script>
+
+<style scoped>
+footer {
+  color: #fff;
+}
+
+.footer-top {
+  background-color: #076d46;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  font-weight: 900
+}
+
+.footer-column a {
+  margin-top: 0;
+  font-size: 1.25rem;
+  /* font-weight: 900; */
+  color:#ffffff;
+}
+
+
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #004d30; /* Darker color for the bottom section */
+  text-align: center;
+  padding: 10px 0;
+}
+</style>

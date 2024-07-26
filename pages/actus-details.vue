@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavOne />
-    <PageHeader title="News Details" />
+    <PageHeader title="Actualités" />
     <NewsDetails />
     <Footer />
   </div>

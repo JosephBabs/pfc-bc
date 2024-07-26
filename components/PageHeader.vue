@@ -1,5 +1,5 @@
 <template>
-  <section class="inner-banner">
+  <section class="inner-banner" style="background-image: url(/assets/images/about-1-1.jpeg);">
       <div class="container">
           <ul class="list-unstyled thm-breadcrumb">
               <li><a href="/">Accueil</a></li>
