@@ -68,47 +68,10 @@ export default {
 .slider {
     position: relative;
     width: 100%;
-    /* max-width: 800px; Adjust as needed */
-    margin: 0 auto;
+    height: 80vh; /* Slider takes 60% of the viewport height */
     overflow: hidden;
 }
 
-.slides {
-    display: flex;
-    transition: opacity 1s ease-in-out;
-}
-
-.slide {
-    width: 100%;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-@media only screen and (max-width: 768px){
-    .slider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* max-width: 800px; Adjust as needed */
-    margin: 0 auto;
-    overflow: hidden;
-}
-.overImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-.overText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem; 
-    z-index: 1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} 
 .slides {
     display: flex;
     transition: opacity 1s ease-in-out;
@@ -123,30 +86,29 @@ export default {
     bottom: 0;
 }
 
-}
-
 .slide.active {
     opacity: 1;
 }
 
-img {
+.overImg {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Ensures images cover the slide area */
 }
 
-h1 {
+.overText {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4rem; 
+    font-size: 2rem; /* Adjusted for readability */
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} 
+}
 
-.prev,
-.next {
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -158,10 +120,28 @@ h1 {
 }
 
 .prev {
-    left: 0;
+    left: 10px;
 }
 
 .next {
-    right: 0;
+    right: 10px;
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+    .overText {
+        font-size: 3rem; /* Larger text on bigger screens */
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .slider {
+        height: 60vh; /* Maintains 60% height on mobile too */
+    }
+
+    .overText {
+        font-size: 1.5rem; /* Smaller text on mobile devices */
+    }
 }
 </style>

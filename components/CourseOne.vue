@@ -8,11 +8,14 @@
                 <div class="item">
                     <div class="content">
                         <div class="block-title text-center">
-                            <h3 class="block-title__title">Objectifs du PFC BENIN et <br>
-                                Indicateurs</h3>
+                            <h3 class="block- title">Amélioratoin de la Gestion Durable des Forêts et Promotion des Chaînes de <br> valeur pour le Dévéloppement Communaire 
+                                </h3>
                             <!-- /.block-title__title -->
                         </div>
-                        <p> L’Objectif de Développement du Projet est
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>
+                                    L’Objectif de Développement du Projet est
                             d’améliorer la gestion intégrée des Forêts Classées
                             ciblées, de faciliter l’accès des principaux centres de
                             consommation au bois-énergie produit de manière
@@ -21,6 +24,10 @@
                             dépendantes des forêts.<br>
                             Il sera évalué sur la base d’indicateurs constitués entre
                             autres de :
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p> 
                         <ul>
                             <li>Superficie des forêts placées sous gestion durable
                                 (ha) sur la base de critères définis ;</li>
@@ -36,6 +43,10 @@
                                 par genre et par âge dans chaque zone cible).</li>
                         </ul>
                         </p>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>

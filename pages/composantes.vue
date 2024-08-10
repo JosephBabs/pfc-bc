@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavOne />
-        <PageHeader title="Composantes de la PFC BENIN" />
+        <PageHeader title="Composantes du PFC BENIN" />
         <!-- <CourseOne /> -->
 
         <CourseCategory />
@@ -17,7 +17,7 @@ export default {
     components: { Footer, NavOne, PageHeader, CourseCategory },
     head() {
         return {
-            title: "PFC BENIN | Composantes de la PFC BENIN"
+            title: "PFC BENIN | Composantes du PFC BENIN"
         }
     }
 }

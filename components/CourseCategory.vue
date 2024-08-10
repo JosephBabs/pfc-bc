@@ -4,7 +4,7 @@
 
     <div class="collapsible-list">
       <div class="block-title text-center">
-        <h2 class="block-title__title">Composantes du PFC BENIN</h2>
+        <h2 class="block- title">Le PFC BENIN</h2>
         <!-- /.block-title__title -->
       </div>
     <div class="item" v-for="(item, index) in items" :key="index">

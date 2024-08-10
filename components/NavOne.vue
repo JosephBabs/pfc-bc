@@ -21,7 +21,7 @@
 
         <div class="container clearfix">
           <!-- Brand and toggle get grouped for better mobile display -->
-          
+
           <div class="logo-box clearfix">
             <img src="/assets/images/logo-dark.png" alt="Logo 1" class="logo" />
             <img src="/assets/images/la-banque-mondiale-logo.png" alt="Logo 2" class="logo" />
@@ -35,35 +35,42 @@
 
 
           <div class="main-navigation">
-            
-          
+
+
             <ul class="navigation-box">
-              <li class="current">
-                <a href="/">Accueil </a>
+              <li :class="{ 'current': isActive('/') }">
+                <nuxt-link to="/">Accueil</nuxt-link>
               </li>
-              <li><nuxt-link to="/apropos">A propos </nuxt-link></li>
-              <li><nuxt-link to="/objectifs_et_indicateurs">Objectifs et indicateurs</nuxt-link></li>
-              <li>
+              <li :class="{ 'current': isActive('/apropos') }">
+                <nuxt-link to="/apropos">A propos</nuxt-link>
+              </li>
+              <li :class="{ 'current': isActive('/objectifs_et_indicateurs') }">
+                <nuxt-link to="/objectifs_et_indicateurs">Objectifs et indicateurs</nuxt-link>
+              </li>
+              <li :class="{ 'current': isActive('/composantes') }">
                 <nuxt-link to="/composantes">Composantes</nuxt-link>
               </li>
-              <li>
-                <nuxt-link to="/documenteque">Documentèque</nuxt-link>
+              <li :class="{ 'current': isActive('/actus') }">
+                <nuxt-link to="/actus">Actualités</nuxt-link>
+              </li>
+              <li :class="{ 'current': isActive('/documentheque') }">
+                <nuxt-link to="/documentheque">Documenthèque</nuxt-link>
                 <ul class="sub-menu">
-                  <li><nuxt-link to="/documenteque#rapports">Rapports</nuxt-link></li>
-                  <li><nuxt-link to="/documenteque#marchespublics">Marchés Publics</nuxt-link></li>
-                  <li><nuxt-link to="/documenteque#autresdocs">Autres Documents</nuxt-link></li>
+                  <li><nuxt-link to="/documentheque#rapports">Rapports</nuxt-link></li>
+                  <li><nuxt-link to="/documentheque#marchespublics">Marchés Publics</nuxt-link></li>
+                  <li><nuxt-link to="/documentheque#autresdocs">Autres Documents</nuxt-link></li>
                 </ul>
               </li>
 
-              <li>
+              <li :class="{ 'current': isActive('/#beneficiaires' ?? '/contact' ) }">
                 <nuxt-link to="#">Plus +</nuxt-link>
                 <ul class="sub-menu">
 
                   <li>
                     <nuxt-link to="/#beneficiaires">Bénéficiaires</nuxt-link>
                   </li>
-                  <li><nuxt-link to="/gallery">Galerie</nuxt-link></li>
-                  <li><nuxt-link to="/actus">Actualités</nuxt-link></li>
+                  <li><a href="https://www.flickr.com/photos/201063064@N02/" target="_blank"
+                      rel="noopener noreferrer">Galerie</a></li>
                   <li><nuxt-link to="/contact">Contact</nuxt-link></li>
                 </ul>
               </li>
@@ -102,6 +109,11 @@
 <script>
 export default {
   name: "NavOne",
+  methods: {
+    isActive(routePath) {
+      return this.$route.path === routePath;
+    }
+  },
   mounted() {
     if ($(".main-navigation .navigation-box").length) {
       var subMenu = $(".main-navigation .sub-menu");
@@ -131,33 +143,42 @@ export default {
 };
 </script>
 <style scoped>
-
-
 .logo-container {
   display: flex;
-  gap: 10px; /* Space between logos */
+  gap: 10px;
+  /* Space between logos */
+}
+
+.showen{
+  display: block; position: absolute; top: 90px;
+
 }
 
 .logo {
-  width:150px; /* Set a fixed width for logos */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure logos do not overflow */
-  object-fit: contain; /* Ensure logos fit well */
+  width: 150px;
+  /* Set a fixed width for logos */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure logos do not overflow */
+  object-fit: contain;
+  /* Ensure logos fit well */
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  
-.logo {
-  width:90px; /* Set a fixed width for logos */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure logos do not overflow */
-  object-fit: contain; /* Ensure logos fit well */
-  margin-bottom: -70px;
-  padding-top: 10px
+
+  .logo {
+    width: 90px;
+    /* Set a fixed width for logos */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure logos do not overflow */
+    object-fit: contain;
+    /* Ensure logos fit well */
+    margin-bottom: -70px;
+    padding-top: 10px
+  }
 }
-}
-
-
-
 </style>

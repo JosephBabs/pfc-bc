@@ -12,8 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/images/logo.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/images/logo.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/images/favicons/android-chrome-192x192.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/images/favicons/android-chrome-192x192.png' },
 
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,700,800%7CSatisfy&display=swap" },
 

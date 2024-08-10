@@ -6,7 +6,7 @@
                 <!-- A propos Column -->
                 <div class="footer-column">
                     <h3>A propos</h3>
-                    <p>Le Projet Forêts Classées Bénin (PFC – B)
+                    <p>Le Projet Forêts Classées Bénin (PFC BENIN)
                         contribue au cadre de partenariat entre la Banque mondiale et le
                         Benin de 2018-2022 au travers de son (i) Domaine d’intervention
                         1 «Transformation structurelle par la compétitivité et la productivité».</p>
@@ -33,7 +33,7 @@
                                     Complexe CEN-SAD LAICO, Villa n°8 rue Steeve BIKO
                                     01 BP 3502 Cotonou</p>
                     <p><strong>Téléphone:</strong> <a href="tel:+22999990608"> (+229) 99 99 06 08</a></p>
-                    <p><strong>Email:</strong><a href="mailto:contact@pfc.uigp.com"> contact@pfc.uigp.com</a></p>
+                    <!-- <p><strong>Email:</strong><a href="mailto:contact@pfc.uigp.com"> contact@pfc.uigp.com</a></p> -->
                     <p><strong>Site Web:</strong> <a href="https://cadredevie.gouv.bj/" target="_blank"> www.cadredevie.gouv.bj/</a></p>
                 </div>
             </div>

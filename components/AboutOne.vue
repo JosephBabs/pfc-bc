@@ -4,7 +4,7 @@
         <div class="container text-center">
             <!-- /.block-title -->
             <div class="about-img" style="margin: 20px;">
-                <div class="row">
+                <div class="row" style="justify-content: center;">
                     <div class="col-lg-6">
                         <img src="/assets/images/about-2-1.jpeg" style="border-radius: 20px;" width="100%" height="auto" alt="">
                     </div><!-- /.col-lg-6 -->
@@ -23,7 +23,7 @@
                         <h3 class="block-title__title">PFC BENIN</h3>
                         <!-- /.block-title__title -->
                     </div>
-                    <p> Le Projet Forêts Classées Bénin (PFC – B) contribue
+                    <p> Le Projet Forêts Classées Bénin (PFC BENIN) contribue
                         au cadre de partenariat entre la Banque mondiale
                         et le Benin de 2018-2022 au travers de son (i)
                         Domaine d’intervention 1 «Transformation structurelle

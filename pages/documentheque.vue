@@ -1,9 +1,8 @@
 <template>
     <div>
       <NavOne />
-      <!-- <BannerOne /> -->
+      <PageHeader title="Documenthèque (PFC Bénin)" />
       
-      <!-- <HeaderHome title="Documentèque (PFC Bénin)" /> -->
       
       
       <Rapports />
@@ -20,6 +19,7 @@
     import NavOne from "../components/NavOne";
     import BannerOne from "../components/BannerOne";
     import HeaderHome from "../components/HeaderHome";
+    import PageHeader from "../components/PageHeader";
     import Footer from "../components/Footer";
     import Rapports  from "../components/Rapports"; 
     import Marches  from "../components/Marches"; 
@@ -32,6 +32,7 @@
         BannerOne,
         Rapports,
         Marches,
+        PageHeader,
         Autredocs,
         NavOne,
         Footer,

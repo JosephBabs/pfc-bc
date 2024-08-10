@@ -220,16 +220,16 @@
   }
 
   .header-navigation .container {
-    display: block;
+    display: flex;
     padding-right: 0px;
     padding-left: 0px;
     position: relative;
   }
 
   .header-navigation .container .logo-box {
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     float: none;
@@ -310,7 +310,7 @@
   }
 
   .header-navigation .container .logo-box {
-    left: 0 !important;
+    left: 20px !important;
   }
 
   .header-navigation .container .logo-box {
